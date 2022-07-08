@@ -1,1 +1,1 @@
-# Go Crypto
+# Go Coin
