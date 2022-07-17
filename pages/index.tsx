@@ -1,11 +1,17 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
+import { Button } from '@mui/material';
+import { useContext } from 'react';
+import { ColorModeContext } from 'src/contexts';
 
 const Home: NextPage = () => {
+  const colorMode = useContext(ColorModeContext);
+
   return (
     <div>
-      <p>Egor</p>
+      <h6>Egor</h6>
+      <Button variant="contained" onClick={() => colorMode.toggleColorMode()}>
+        Click jake
+      </Button>
     </div>
   );
 };
